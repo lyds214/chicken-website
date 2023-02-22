@@ -1,13 +1,13 @@
-.container {
-    /* The image used */
-    background-image: url(../assets/landing-page-background.png);
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  overflow: hidden;
+}
 
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
+.image-container{
+    height: 100%;
+    width: 100%;
+    background-repeat: unset;
+    background-image: url('../assets/landing-page-background.png');
 }
