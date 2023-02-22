@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import background from '../assets/landing-page-background.png'
-
+import './Home.css'
 
 function Home() {
     const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
@@ -15,7 +15,7 @@ function Home() {
     });
         
     return (
-    <div style={{backgroundImage: `url(${imageUrl})`}}>Home</div>
+    <div className='container'>Experience the Playful Dishes with Chick in the Box</div>
   )
 }
 
