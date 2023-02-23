@@ -3,7 +3,6 @@ body {
 }
 
 .image-container{
-    margin: 0px;
     overflow: hidden;
     height: 100%;
     width: 100%;
@@ -14,13 +13,46 @@ body {
 
 .text-container{
     position: absolute;
-    top: 34%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     text-align: left;
     width: 50%;
     z-index: 1;
     text-transform: uppercase;
+    /* background: red; */
+}
+
+@media screen and (max-width: 1440px) {
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 82%;
+    z-index: 1;
+    text-transform: uppercase;
+    /* background: red; */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      width: 82%;
+      z-index: 1;
+      text-transform: uppercase;
+      /* background: red; */
+    }
 }
