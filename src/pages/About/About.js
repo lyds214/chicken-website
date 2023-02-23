@@ -1,5 +1,6 @@
 import React from 'react'
 import cafe from '../../assets/about.png'
+import '../About/About.css'
 
 const About = () => {
   return (
