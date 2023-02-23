@@ -14,13 +14,13 @@ body {
 
 .text-container{
     position: absolute;
-    top: 40%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     text-align: left;
-    width: 90%;
+    width: 50%;
     z-index: 1;
     text-transform: uppercase;
 }
