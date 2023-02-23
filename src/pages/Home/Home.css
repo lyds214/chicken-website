@@ -3,12 +3,15 @@ body{
   height: 100%;
 }
 
+.text-style {
+  font-family: Poppins;
+
+}
 .image-container{
     overflow: hidden;
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
-    /* background-image: url('../../assets/images/background.png'); */
     filter: saturate(1.2) brightness(1);
 }
 
