@@ -24,7 +24,6 @@ body {
     text-transform: uppercase;
 }
 
-/* smaller laptops */
 @media screen and (max-width: 1620px) {
   
   .text-container {
@@ -41,7 +40,6 @@ body {
   }
 }
 
-/* tablet */
 @media screen and (max-width: 1024px) {
   .text-container {
       position: absolute;
