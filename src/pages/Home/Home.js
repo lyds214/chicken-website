@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import background from "../assets/background.png";
-import "./Home.css";
+import background from '../../assets/background.png';
+import "../Home/Home.css";
 
 function Home() {
 
