@@ -1,14 +1,21 @@
-body {
-    overflow: hidden;
-    height: 100%;
-}
-
-img {
+/* img {
     display: block;
-    margin: 0 0 0 6rem;
-  }
+    margin: 10rem 0 0 6rem;
+} */
 
-.text-style {
-    font-family: Poppins;
+.img-container {
+    display: flex;
+    margin: 10rem 0 0 6rem;
 }
 
+.about-chick-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0 0 6rem;
+    /* background: red; */
+    width: 50%;
+    padding: 10rem 0 0 2rem;
+}
+
+
+ 

@@ -20,7 +20,7 @@ function Home() {
     <div className="image-container text-style">
       <img className="image-container" src={background} alt="background" />
       <div className="text-container">
-        <h1>experience the playful dishes with chick in the box</h1>
+        <h1>EXPERIENCE THE PLAYFUL DISHES WITH CHICK IN THE BOX</h1>
          {/* <p>Width: {windowSize[0]}</p>
             <p>Height: {windowSize[1]}</p> */}
       </div>
