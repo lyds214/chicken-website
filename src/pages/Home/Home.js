@@ -17,7 +17,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="image-container text-style">
+    <div className="image-container text-heading">
       <img className="image-container" src={background} alt="background" />
       <div className="text-container">
         <h1>EXPERIENCE THE PLAYFUL DISHES WITH CHICK IN THE BOX</h1>

@@ -3,10 +3,10 @@ body{
   height: 100%;
 }
 
-.text-style {
+.text-heading {
   font-family: Poppins;
-
 }
+
 .image-container{
     overflow: hidden;
     height: 100%;
