@@ -21,24 +21,7 @@
     font-size: 1.4rem;
 }
 
-/* 1920px X 1080px */
-@media screen and (max-width: 1920px) {
-    .img-container {
-        display: flex;
-        margin: 10rem 0 0 6rem;
-    }
-    .about-chick-container {
-        margin: 10rem 0 0 6rem;
-     }
-    .heading {
-        font-family: Poppins-SemiBold;
-        font-size: 3.3rem;
-    }
-    .paragraph {
-        font-family: Poppins-Regular;
-        font-size: 1.6rem;
-    }
-}
+
 
 
 
