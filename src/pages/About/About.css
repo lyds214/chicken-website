@@ -1,6 +1,6 @@
 .img-container {
     display: flex;
-    margin: 10rem 0 0 6rem;
+    margin: 5rem 0 0 6rem;
 }
 
 .about-chick-container {
@@ -12,9 +12,13 @@
     padding: 10rem 0 0 2rem;
 }
 
-.text-heading {
-    font-family: Poppins;
-  }
+.heading {
+    font-family: Poppins-SemiBold;
+}
+
+.paragraph{
+    font-family: Poppins-Regular;
+}
 
 
  
