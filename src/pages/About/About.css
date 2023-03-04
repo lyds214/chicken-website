@@ -23,7 +23,7 @@
 
 
 /* tablet */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .img-container {
         display: none;
     }
@@ -38,7 +38,7 @@
     .paragraph {
         font-size: 1rem;
     }
-}
+} */
     
 
 
