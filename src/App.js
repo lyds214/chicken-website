@@ -4,7 +4,9 @@ import Home from "./pages/Home/Home";
 function App() {
   return (
     <div className="App">
-      <Home />
+      <div className="font-poppins">
+        <Home />
+      </div>
     </div>
   );
 }
