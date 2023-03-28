@@ -6,11 +6,10 @@ function Home() {
   return (
     <div>
       <img src={background} alt="background" className="background-img" />
-      <div>
-        <h1 className="title">
-          EXPERIENCE THE PLAYFUL DISHES WITH CHICK IN THE BOX
-        </h1>
-      </div>
+
+      <h1 className="title">
+        EXPERIENCE THE PLAYFUL DISHES WITH CHICK IN THE BOX
+      </h1>
     </div>
   );
 }
