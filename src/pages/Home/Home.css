@@ -4,3 +4,12 @@
     height: 100%;
     background-color: red;
 }
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+}
