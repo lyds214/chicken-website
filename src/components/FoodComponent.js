@@ -7,13 +7,14 @@ const FoodComponent = () => {
 
   return (
     <div className="container" style={{ width: "29.063em", height: "67.5em" }}>
-      <img
-        src={chicken}
-        alt="chicken"
-        onMouseEnter={() => setIsShown(true)}
-        onMouseLeave={() => setIsShown(false)}
-      />
-      {isShown && <div className="centered">Hello</div>}
+      <img src={chicken} alt="chicken" onMouseEnter={() => setIsShown(true)} />
+      {isShown && (
+        <div className="centered">
+          <p>Chicken</p>
+          <p style={{ fontWeight: "bold" }}>$14.99</p>
+          <button>ORDER NOW</button>
+        </div>
+      )}
     </div>
   );
 };
