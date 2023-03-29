@@ -1,6 +1,29 @@
-.cafe-image {
+.container {
+    display: block;
+    height: 100%;
+}
+
+.about-text {
     position: absolute;
+    top: 23.75em;
+    left:68.125em;
+    width: 33%;
+
+}
+
+.image-container {
+    position: absolute;
+    top: 7.375em;
     left: 5.875em;
-    top: 7.313em;
-    background: red;
+}
+
+.column > * {
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
