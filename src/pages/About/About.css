@@ -21,9 +21,9 @@
     padding: 1rem;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-}
+} */
