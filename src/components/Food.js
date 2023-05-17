@@ -1,6 +1,9 @@
 import React from 'react'
+import './data'
 
-const Food = () => {
+import Box from '@mui/material/Box'
+
+const Food = ({name, price}) => {
   return (
     <div>Food</div>
   )
