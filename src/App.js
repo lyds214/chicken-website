@@ -8,7 +8,7 @@ import Location from "./pages/Location/Location";
 function App() {
   return (
     <div className="App">
-      <Location />
+      <Home />
     </div>
   );
 }
