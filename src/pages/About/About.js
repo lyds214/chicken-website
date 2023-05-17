@@ -21,9 +21,9 @@ const About = () => {
         <Grid item>
           <img src={cafe} alt="cafe" />
         </Grid>
-        <Grid item xs={12} sm container>
-          <Grid item xs container>
-            <Grid item xs >
+        <Grid item xs={12} sm container >
+          <Grid item xs container spacing={8}>
+            <Grid item xs>
               <Typography variant="h2">About Chick In The Box</Typography>
               <Grid item xs>
                 <Typography variant="p">Chick in the Box is a locally owned business that is quality driven to provide the best products to our customers.</Typography>
