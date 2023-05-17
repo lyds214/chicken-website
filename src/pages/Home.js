@@ -1,6 +1,6 @@
 import React from "react";
-import background from "../../assets/img/landing.png";
-import "./Home.css";
+import background from "../../src/assets/img/landing.png";
+import "./styles/Home.css";
 
 function Home() {
   return (
