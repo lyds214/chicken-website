@@ -1,6 +1,6 @@
 import bibimbap from '../assets/img/bibimbap.png'
 import porkcutlet from '../assets/img/cutlet.png'
-import chicken from '../assets/img/chicken'
+import chicken from '../assets/img/chicken.png'
 import beefbowl from '../assets/img/beef-bowl.png'
 
 export const data = [
