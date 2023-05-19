@@ -5,7 +5,6 @@ import porkcutlet from '../assets/img/cutlet.png'
 import chicken from '../assets/img/chicken.png'
 import beefbowl from '../assets/img/beef-bowl.png'
 
-import Box from '@mui/material/Box'
 import { Typography, Button, Grid, Paper } from '@mui/material'
 
 const OurSpecialties = () => {
@@ -41,13 +40,18 @@ const OurSpecialties = () => {
     paperContainer: {
         width: 465,
         height: 1080,
+        background: "cyan"
     }
   }
 
   return (
     <Paper style={styles.paperContainer}>
-   Hello
- </Paper>
+      {foods.map(food => {
+          <Typography key={food.id}>{food.name}</Typography>
+      })}
+
+      <Button>ORDER NOW</Button>
+    </Paper>
   )
 }
 
