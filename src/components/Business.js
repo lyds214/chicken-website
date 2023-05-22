@@ -8,14 +8,15 @@ const Business = () => {
     <Box
       sx={{
         width: 429,
-        height: 340,
+        height: 400,
         backgroundColor: "primary.dark",
+        borderRadius: 4,
       }}
     >
       <Box
         sx={{
-          paddingTop: 2,
-          paddingLeft: 2,
+          paddingTop: 3,
+          paddingLeft: 3,
         }}
       >
         <Grid
@@ -25,11 +26,15 @@ const Business = () => {
           alignItems="flex-start"
         >
           <Grid item>
-            <Typography variant="h4">Chick in the Box</Typography>
+            <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+              Chick in the Box
+            </Typography>
           </Grid>
           <Grid item>
             <Box>
-              <Typography variant="h6">(626) 698 - 3150</Typography>
+              <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+                (626) 698 - 3150
+              </Typography>
             </Box>
           </Grid>
           <Grid item>
@@ -44,8 +49,8 @@ const Business = () => {
         sx={{
           width: 429,
           height: 368,
-          paddingTop: 2,
-          paddingLeft: 2,
+          paddingTop: 7,
+          paddingLeft: 3,
         }}
       >
         <Grid
@@ -55,7 +60,9 @@ const Business = () => {
           alignItems="flex-start"
         >
           <Grid item>
-            <Typography variant="h4">Hours</Typography>
+            <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+              Hours
+            </Typography>
           </Grid>
           <Grid item>
             <Typography variant="h6">Sun: 11AM - 8PM</Typography>
@@ -64,7 +71,9 @@ const Business = () => {
             <Typography variant="h6">Tues-Sat: 11AM - 9PM</Typography>
           </Grid>
           <Grid item>
-            <Typography variant="h6">Closed on Mondays</Typography>
+            <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+              Closed on Mondays
+            </Typography>
           </Grid>
         </Grid>
       </Box>
