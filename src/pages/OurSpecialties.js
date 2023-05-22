@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import beefbowl from "../assets/img/beef-bowl.png";
 import bibimbap from "../assets/img/bibimbap.png";
 import chicken from "../assets/img/chicken.png";
@@ -7,28 +7,33 @@ import cutlet from "../assets/img/cutlet.png";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import { Card } from "@mui/material";
+import { Card, Grid, Button } from "@mui/material";
+import { red } from "@mui/material/colors";
 
 const images = [
   {
     url: beefbowl,
     title: "Beef Bowl",
+    price: "$14.99",
     width: "25%",
   },
   {
     url: bibimbap,
     title: "Bibimbap",
+    price: "$14.99",
     width: "25%",
   },
 
   {
     url: chicken,
     title: "Chicken",
+    price: "$14.99",
     width: "25%",
   },
   {
     url: cutlet,
     title: "Cutlet",
+    price: "$14.99",
     width: "25%",
   },
 ];
@@ -48,9 +53,9 @@ const ImageButton = styled(Card)(({ theme }) => ({
     "& .MuiImageMarked-root": {
       opacity: 0,
     },
-    "& .MuiTypography-root": {
-      border: "4px solid currentColor",
-    },
+    // "& .MuiTypography-root": {
+    //   border: "4px solid currentColor",
+    // },
   },
 }));
 
@@ -87,14 +92,15 @@ const ImageBackdrop = styled("span")(({ theme }) => ({
   transition: theme.transitions.create("opacity"),
 }));
 
-const ImageMarked = styled("span")(({ theme }) => ({
-  height: 3,
-  width: 100,
-  backgroundColor: theme.palette.common.white,
-  position: "absolute",
-  bottom: -2,
-  left: "calc(50% - 45px)",
-  transition: theme.transitions.create("opacity"),
+const CustomButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.getContrastText(red[500]),
+  width: 215,
+  height: 46,
+  borderRadius: 20,
+  backgroundColor: red[500],
+  "&:hover": {
+    backgroundColor: red[700],
+  },
 }));
 
 const OurSpecialties = () => {
@@ -104,7 +110,6 @@ const OurSpecialties = () => {
     >
       {images.map((image) => (
         <ImageButton
-          focusRipple
           key={image.title}
           style={{
             width: image.width,
@@ -113,20 +118,39 @@ const OurSpecialties = () => {
           <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
           <ImageBackdrop className="MuiImageBackdrop-root" />
           <Image>
-            <Typography
-              component="span"
-              variant="h3"
-              color="inherit"
-              sx={{
-                position: "relative",
-                p: 4,
-                pt: 2,
-                pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-              }}
+            <Grid
+              container
+              direction="column"
+              justifyContent="center"
+              alignItems="center"
+              spacing={2}
             >
-              {image.title}
-              <ImageMarked className="MuiImageMarked-root" />
-            </Typography>
+              <Grid item>
+                <Typography
+                  component="span"
+                  variant="h3"
+                  color="inherit"
+                  sx={{
+                    position: "relative",
+                    p: 4,
+                    pt: 2,
+                    pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                  }}
+                >
+                  {image.title}
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Typography component="span" variant="h4">
+                  {image.price}
+                </Typography>
+              </Grid>
+              <Grid item>
+                <CustomButton variant="contained" disableElevation size="large">
+                  ORDER NOW
+                </CustomButton>
+              </Grid>
+            </Grid>
           </Image>
         </ImageButton>
       ))}
