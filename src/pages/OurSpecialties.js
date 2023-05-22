@@ -10,6 +10,8 @@ import Typography from "@mui/material/Typography";
 import { Card, Grid, Button } from "@mui/material";
 import { red } from "@mui/material/colors";
 
+import "../pages/styles/OurSpecialties.css";
+
 const images = [
   {
     url: beefbowl,
@@ -105,60 +107,73 @@ const CustomButton = styled(Button)(({ theme }) => ({
 
 const OurSpecialties = () => {
   return (
-    <Box
-      sx={{ display: "flex", flexWrap: "wrap", minWidth: 300, width: "100%" }}
-    >
-      {images.map((image) => (
-        <ImageButton
-          key={image.title}
-          style={{
-            width: image.width,
-          }}
-        >
-          <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
-          <ImageBackdrop className="MuiImageBackdrop-root" />
-          <Image>
-            <Grid
-              container
-              direction="column"
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-            >
-              <Grid item>
-                <Typography
-                  component="span"
-                  variant="h3"
-                  color="inherit"
-                  sx={{
-                    position: "relative",
-                    p: 4,
-                    pt: 2,
-                    pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-                  }}
-                >
-                  {image.title}
-                </Typography>
+    <>
+      <div className="wrapper">
+        <div class="gold-box">
+          <Typography variant="h2" sx={{ fontWeight: "bold" }}>
+            Our Specialties
+          </Typography>
+        </div>
+      </div>
+      <Box
+        sx={{ display: "flex", flexWrap: "wrap", minWidth: 300, width: "100%" }}
+      >
+        {images.map((image) => (
+          <ImageButton
+            key={image.title}
+            style={{
+              width: image.width,
+            }}
+          >
+            <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+            <ImageBackdrop className="MuiImageBackdrop-root" />
+            <Image>
+              <Grid
+                container
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+                spacing={2}
+              >
+                <Grid item>
+                  <Typography
+                    component="span"
+                    variant="h3"
+                    color="inherit"
+                    sx={{
+                      position: "relative",
+                      p: 4,
+                      pt: 2,
+                      pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                    }}
+                  >
+                    {image.title}
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography
+                    component="span"
+                    variant="h4"
+                    sx={{ fontWeight: "bold" }}
+                  >
+                    {image.price}
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <CustomButton
+                    variant="contained"
+                    disableElevation
+                    size="large"
+                  >
+                    ORDER NOW
+                  </CustomButton>
+                </Grid>
               </Grid>
-              <Grid item>
-                <Typography
-                  component="span"
-                  variant="h4"
-                  sx={{ fontWeight: "bold" }}
-                >
-                  {image.price}
-                </Typography>
-              </Grid>
-              <Grid item>
-                <CustomButton variant="contained" disableElevation size="large">
-                  ORDER NOW
-                </CustomButton>
-              </Grid>
-            </Grid>
-          </Image>
-        </ImageButton>
-      ))}
-    </Box>
+            </Image>
+          </ImageButton>
+        ))}
+      </Box>
+    </>
   );
 };
 

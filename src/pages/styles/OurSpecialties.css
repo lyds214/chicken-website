@@ -1,0 +1,18 @@
+.wrapper {
+  position: relative;
+}
+
+.gold-box {
+  position: absolute;
+  z-index: 3; /* put .gold-box above .green-box and .dashed-box */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(75, 72, 72),
+    rgba(255, 0, 0, 0)
+  );
+  width: 100%;
+  padding-top: 2%;
+  /* top: 3em; */
+  text-align: center;
+  color: aliceblue;
+}
