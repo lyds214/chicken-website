@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import beefbowl from "../assets/img/beef-bowl.png";
 import bibimbap from "../assets/img/bibimbap.png";
 import chicken from "../assets/img/chicken.png";
@@ -141,7 +141,11 @@ const OurSpecialties = () => {
                 </Typography>
               </Grid>
               <Grid item>
-                <Typography component="span" variant="h4">
+                <Typography
+                  component="span"
+                  variant="h4"
+                  sx={{ fontWeight: "bold" }}
+                >
                   {image.price}
                 </Typography>
               </Grid>
