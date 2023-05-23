@@ -4,6 +4,8 @@ import OurSpecialties from "./pages/OurSpecialties";
 import Location from "./pages/Location";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import { Route, Routes } from "react-router-dom";
+
 import "./App.css";
 
 import { createTheme, ThemeProvider } from "@mui/material";

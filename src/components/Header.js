@@ -1,13 +1,10 @@
 import * as React from "react";
-import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { styled } from "@mui/material/styles";
-
-import Slide from "@mui/material/Slide";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const ColorButton = styled(Button)(({ theme }) => ({
   color: "white",
@@ -19,7 +16,7 @@ const ColorButton = styled(Button)(({ theme }) => ({
   padding: 10,
 }));
 
-const Header = (props) => {
+const Header = () => {
   return (
     <AppBar
       position="static"
@@ -34,12 +31,22 @@ const Header = (props) => {
         <Button variant="text" sx={{ color: "white" }}>
           MENU
         </Button>
-        <Button variant="text" sx={{ color: "white" }}>
-          ABOUT US
-        </Button>
-        <Button variant="text" sx={{ color: "white" }}>
-          SPECIALTY
-        </Button>
+        <AnchorLink href="#about">
+          {" "}
+          <Button variant="text" sx={{ color: "white" }}>
+            ABOUT US
+          </Button>
+        </AnchorLink>
+        <AnchorLink href="#specialty">
+          <Button variant="text" sx={{ color: "white" }}>
+            OUR SPECIALTIES
+          </Button>
+        </AnchorLink>
+        <AnchorLink href="#location">
+          <Button variant="text" sx={{ color: "white" }}>
+            LOCATION
+          </Button>
+        </AnchorLink>
         <ColorButton color="inherit">ORDER ONLINE</ColorButton>
       </Toolbar>
     </AppBar>

@@ -106,7 +106,7 @@ const CustomButton = styled(Button)(({ theme }) => ({
 
 const OurSpecialties = () => {
   return (
-    <>
+    <section id="specialty">
       <div className="wrapper">
         <div class="gradient">
           <Typography variant="h2" sx={{ fontWeight: "bold", color: "white" }}>
@@ -170,7 +170,7 @@ const OurSpecialties = () => {
           </ImageButton>
         ))}
       </Box>
-    </>
+    </section>
   );
 };
 
