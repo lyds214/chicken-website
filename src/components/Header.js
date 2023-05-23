@@ -3,18 +3,17 @@ import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { Button, Box } from "@mui/material";
+import { Button } from "@mui/material";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import { red } from "@mui/material/colors";
 import { styled } from "@mui/material/styles";
 
 import Slide from "@mui/material/Slide";
 
 const ColorButton = styled(Button)(({ theme }) => ({
-  color: theme.palette.getContrastText(red[500]),
-  backgroundColor: red[500],
+  color: "white",
+  backgroundColor: "red",
   "&:hover": {
-    backgroundColor: red[700],
+    backgroundColor: "#f44336",
   },
   borderRadius: 16,
   padding: 10,
@@ -53,9 +52,15 @@ const Header = (props) => {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               CHICK IN THE BOX
             </Typography>
-            <Button variant="text">MENU</Button>
-            <Button variant="text">ABOUT US</Button>
-            <Button variant="text">SPECIALTY</Button>
+            <Button variant="text" sx={{ color: "white" }}>
+              MENU
+            </Button>
+            <Button variant="text" sx={{ color: "white" }}>
+              ABOUT US
+            </Button>
+            <Button variant="text" sx={{ color: "white" }}>
+              SPECIALTY
+            </Button>
             <ColorButton color="inherit">ORDER ONLINE</ColorButton>
           </Toolbar>
         </AppBar>
