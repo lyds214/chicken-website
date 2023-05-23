@@ -9,7 +9,7 @@ const Business = () => {
       sx={{
         width: 429,
         height: 400,
-        backgroundColor: "primary.dark",
+        backgroundColor: "white",
         borderRadius: 4,
       }}
     >

@@ -37,7 +37,12 @@ const Location = () => {
     >
       <Grid container spacing={20} justify="center" alignItems="center">
         <Grid item>
-          <Typography variant="h2">Location</Typography>
+          <Typography
+            variant="h2"
+            style={{ color: "white", fontWeight: "bold" }}
+          >
+            Location
+          </Typography>
           <Box sx={{ paddingTop: 2 }}>
             <Business />
           </Box>

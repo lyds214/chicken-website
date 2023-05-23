@@ -109,8 +109,8 @@ const OurSpecialties = () => {
   return (
     <>
       <div className="wrapper">
-        <div class="gold-box">
-          <Typography variant="h2" sx={{ fontWeight: "bold" }}>
+        <div class="gradient">
+          <Typography variant="h2" sx={{ fontWeight: "bold", color: "white" }}>
             Our Specialties
           </Typography>
         </div>
