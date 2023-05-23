@@ -4,7 +4,7 @@ import OurSpecialties from "./pages/OurSpecialties";
 import Location from "./pages/Location";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { Route, Routes } from "react-router-dom";
+import Calendar from "./Calendar";
 
 import "./App.css";
 
@@ -20,12 +20,13 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <Header />
+        {/* <Header />
         <Home />
         <About />
         <OurSpecialties />
         <Location />
-        <Footer />
+        <Footer /> */}
+        <Calendar />
       </ThemeProvider>
     </div>
   );

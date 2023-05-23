@@ -55,9 +55,6 @@ const ImageButton = styled(Card)(({ theme }) => ({
     "& .MuiImageMarked-root": {
       opacity: 0,
     },
-    // "& .MuiTypography-root": {
-    //   border: "4px solid currentColor",
-    // },
   },
 }));
 

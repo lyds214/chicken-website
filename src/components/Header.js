@@ -32,7 +32,6 @@ const Header = () => {
           MENU
         </Button>
         <AnchorLink href="#about">
-          {" "}
           <Button variant="text" sx={{ color: "white" }}>
             ABOUT US
           </Button>

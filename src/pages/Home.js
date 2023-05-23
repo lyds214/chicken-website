@@ -2,7 +2,7 @@ import React from "react";
 import background from "../../src/assets/img/landing.png";
 import "./styles/Home.css";
 
-import { Box, Container, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 
 function Home() {
   return (

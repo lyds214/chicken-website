@@ -24,7 +24,10 @@ const About = () => {
               <Grid item>
                 <Typography
                   variant="h2"
-                  sx={{ color: "white", fontWeight: "bold" }}
+                  sx={{
+                    color: "white",
+                    fontWeight: "bold",
+                  }}
                 >
                   About Chick In The Box
                 </Typography>

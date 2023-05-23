@@ -5,27 +5,6 @@ import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import map from "../assets/img/map.png";
 
-// const Location = () => {
-//   return (
-//     <Grid
-//       container
-//       direction="column"
-//       justifyContent="center"
-//       alignItems="flex-start"
-//       spacing={2}
-//     >
-//       <Grid item>
-//         <Typography variant="h3">Location</Typography>
-//       </Grid>
-//       <Grid item>
-//         <Business />
-//       </Grid>
-//     </Grid>
-//   );
-// };
-
-// export default Location;
-
 const Location = () => {
   return (
     <section id="location">
