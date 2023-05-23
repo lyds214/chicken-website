@@ -6,15 +6,25 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./App.css";
 
+import { createTheme, ThemeProvider } from "@mui/material";
+
 function App() {
+  const theme = createTheme({
+    typography: {
+      fontFamily: ["Poppins", "sans-serif"].join(","),
+    },
+  });
+
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <About />
-      <OurSpecialties />
-      <Location />
-      <Footer />
+      <ThemeProvider theme={theme}>
+        <Header />
+        <Home />
+        <About />
+        <OurSpecialties />
+        <Location />
+        <Footer />
+      </ThemeProvider>
     </div>
   );
 }
