@@ -2,12 +2,12 @@
   position: relative;
 }
 
-.gold-box {
+.gradient {
   position: absolute;
   z-index: 3; /* put .gold-box above .green-box and .dashed-box */
   background-image: linear-gradient(
     to bottom,
-    rgb(75, 72, 72),
+    rgb(0, 0, 0),
     rgba(255, 0, 0, 0)
   );
   width: 100%;
