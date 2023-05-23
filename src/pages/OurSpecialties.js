@@ -95,13 +95,12 @@ const ImageBackdrop = styled("span")(({ theme }) => ({
 }));
 
 const CustomButton = styled(Button)(({ theme }) => ({
-  color: theme.palette.getContrastText(red[500]),
   width: 215,
   height: 46,
   borderRadius: 20,
-  backgroundColor: red[500],
+  backgroundColor: "red",
   "&:hover": {
-    backgroundColor: red[700],
+    backgroundColor: red[500],
   },
 }));
 
@@ -145,17 +144,14 @@ const OurSpecialties = () => {
                       p: 4,
                       pt: 2,
                       pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                      fontWeight: "bold",
                     }}
                   >
                     {image.title}
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Typography
-                    component="span"
-                    variant="h4"
-                    sx={{ fontWeight: "bold" }}
-                  >
+                  <Typography component="span" variant="h4">
                     {image.price}
                   </Typography>
                 </Grid>
@@ -164,6 +160,7 @@ const OurSpecialties = () => {
                     variant="contained"
                     disableElevation
                     size="large"
+                    sx={{ fontWeight: "bold", fontSize: "1em" }}
                   >
                     ORDER NOW
                   </CustomButton>
