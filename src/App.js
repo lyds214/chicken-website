@@ -10,6 +10,11 @@ function App() {
   return (
     <div className="App">
       <Header />
+      {/* <Home /> */}
+      <About />
+      <OurSpecialties />
+      <Location />
+      <Footer />
     </div>
   );
 }
