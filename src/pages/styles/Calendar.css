@@ -75,9 +75,9 @@
   padding: 0.5em;
 }
 
-.react-calendar__month-view__days__day--weekend {
+/* .react-calendar__month-view__days__day--weekend {
   color: #d10000;
-}
+} */
 
 .react-calendar__month-view__days__day--neighboringMonth {
   opacity: 0.5;
