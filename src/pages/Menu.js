@@ -7,7 +7,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+import { Button, Grid, CardActions } from "@mui/material";
 import chickencard from "../assets/img/chickencard.jpg";
 import { red } from "@mui/material/colors";
 
@@ -60,39 +60,53 @@ const Menu = () => {
         aria-describedby="modal-modal-description"
       >
         <Card sx={style}>
-          <CardMedia
-            component="img"
-            height="140"
-            image={chickencard}
-            alt="green iguana"
-          />
-          <CardContent>
-            <Typography
-              gutterBottom
-              variant="h5"
-              component="div"
-              style={{ fontWeight: "600" }}
-            >
-              Chicken
-            </Typography>
-            <Typography variant="paragraph" color="text.secondary">
-              Chicken with honey sauce, sprinkled with seed and green onion.
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button
-              variant="contained"
-              sx={{
-                backgroundColor: "red",
-                "&:hover": {
-                  backgroundColor: red[500],
-                },
-                borderRadius: 8,
-              }}
-            >
-              ORDER NOW
-            </Button>
-          </CardActions>
+          <Grid
+            container
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <CardMedia
+              component="img"
+              height="140"
+              image={chickencard}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Grid item>
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  style={{ fontWeight: "600" }}
+                >
+                  Chicken
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Typography variant="paragraph" color="text.secondary">
+                  Chicken with honey sauce, sprinkled with sesame seed and green
+                  onion.
+                </Typography>
+              </Grid>
+            </CardContent>
+            <Grid item>
+              <CardActions>
+                <Button
+                  variant="contained"
+                  sx={{
+                    backgroundColor: "red",
+                    "&:hover": {
+                      backgroundColor: red[500],
+                    },
+                    borderRadius: 8,
+                  }}
+                >
+                  ORDER NOW
+                </Button>
+              </CardActions>
+            </Grid>
+          </Grid>
         </Card>
       </Modal>
     </section>
