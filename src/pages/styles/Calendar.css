@@ -80,7 +80,8 @@
 }
 
 .react-calendar__month-view__days__day--neighboringMonth {
-  color: #757575;
+  opacity: 0.5;
+  color: #818589;
 }
 
 .react-calendar__year-view .react-calendar__tile,
@@ -139,4 +140,10 @@
 
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;
+}
+
+button {
+  border: 0;
+  border-radius: 3px;
+  color: white;
 }
