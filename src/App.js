@@ -5,7 +5,6 @@ import Location from "./pages/Location";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Menu from "./pages/Menu";
-
 import "./App.css";
 
 import { createTheme, ThemeProvider } from "@mui/material";
