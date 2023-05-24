@@ -12,6 +12,7 @@ const Menu = () => {
         prev2Label={null}
         calendarType="US"
         maxDetail="month"
+        // showNavigation={false}
         style={{ color: "white" }}
       />
     </div>
