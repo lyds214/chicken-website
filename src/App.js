@@ -4,7 +4,7 @@ import OurSpecialties from "./pages/OurSpecialties";
 import Location from "./pages/Location";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Calendar from "./Calendar";
+import Menu from "./pages/Menu";
 
 import "./App.css";
 
@@ -26,7 +26,7 @@ function App() {
         <OurSpecialties />
         <Location />
         <Footer /> */}
-        <Calendar />
+        <Menu />
       </ThemeProvider>
     </div>
   );
