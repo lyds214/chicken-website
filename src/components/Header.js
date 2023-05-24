@@ -28,9 +28,11 @@ const Header = () => {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           CHICK IN THE BOX
         </Typography>
-        <Button variant="text" sx={{ color: "white" }}>
-          MENU
-        </Button>
+        <AnchorLink href="#menu">
+          <Button variant="text" sx={{ color: "white" }}>
+            MENU
+          </Button>
+        </AnchorLink>
         <AnchorLink href="#about">
           <Button variant="text" sx={{ color: "white" }}>
             ABOUT US

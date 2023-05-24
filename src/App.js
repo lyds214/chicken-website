@@ -20,13 +20,13 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        {/* <Header />
+        <Header />
         <Home />
         <About />
         <OurSpecialties />
         <Location />
-        <Footer /> */}
         <Menu />
+        <Footer />
       </ThemeProvider>
     </div>
   );

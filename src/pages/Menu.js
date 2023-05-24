@@ -2,10 +2,20 @@ import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "./styles/Calendar.css";
 import { Box, Typography } from "@mui/material";
+import { click } from "@testing-library/user-event/dist/click";
+
+// onChange
+// onClickDay
+// tileClassName
+// tileContent
 
 const Menu = () => {
+  const clickDay = () => {
+    console.log("hello");
+  };
+
   return (
-    <div>
+    <section id="menu">
       <Box
         sx={{
           backgroundColor: "black",
@@ -26,10 +36,11 @@ const Menu = () => {
         next2Label={null}
         prev2Label={null}
         calendarType="US"
-        maxDetail="month"
         style={{ color: "white" }}
+        onClickDay={clickDay}
+        tileClassName="tile-class"
       />
-    </div>
+    </section>
   );
 };
 
